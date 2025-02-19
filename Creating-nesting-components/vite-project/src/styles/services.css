@@ -1,0 +1,9 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+}
