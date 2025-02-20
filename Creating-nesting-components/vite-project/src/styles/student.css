@@ -1,0 +1,61 @@
+.students-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-items: center;
+  }
+  
+  .student-card {
+    background: white;
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .student-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .student-card h2 {
+    color: #007bff;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .student-card p {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    font-weight: 500;
+  }
+  
+  .status {
+    margin-top: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .status.enrolled {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .status.graduated {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
